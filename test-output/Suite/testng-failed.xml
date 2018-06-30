@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="remoteNodeUrl" value="http://192.168.0.106:6655/wd.hub"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.automation.frame.TestSeleniumGridByTestNGParameter">
+        <methods>
+          <include name="afterTest"/>
+          <include name="testSogouSearch1"/>
+          <include name="testSogouSearch2"/>
+        </methods>
+      </class> <!-- com.automation.frame.TestSeleniumGridByTestNGParameter -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="remoteNodeUrl" value="http://192.168.0.106:6655/wd.hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.automation.frame.TestSeleniumGridByTestNGParameter">
+        <methods>
+          <include name="afterTest"/>
+          <include name="testSogouSearch1"/>
+          <include name="testSogouSearch2"/>
+        </methods>
+      </class> <!-- com.automation.frame.TestSeleniumGridByTestNGParameter -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
