@@ -78,7 +78,7 @@ public class LoginPage extends LoadableComponent<LoginPage> {
 		userName.clear();
 		userName.sendKeys("testemaillogin");
 		password.clear();
-		password.sendKeys("ma1111de");
+		password.sendKeys("********");
 		loginButton.click();
 		Thread.sleep(2000);
 		driver.switchTo().defaultContent();

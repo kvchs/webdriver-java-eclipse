@@ -32,7 +32,7 @@ public class TestSendMailWithAttachment {
 		userName.clear();
 		userName.sendKeys("testemaillogin");
 		password.clear();
-		password.sendKeys("ma1111de");
+		password.sendKeys("********");
 		loginButton.click();
 		try {
 			Thread.sleep(5000);

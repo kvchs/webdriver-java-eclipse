@@ -53,11 +53,11 @@ public class TestMail126Login {
 //		loginPage.username().clear();
 //		loginPage.username().sendKeys("testemaillogin");
 //		loginPage.password().clear();
-//		loginPage.password().sendKeys("ma1111de");
+//		loginPage.password().sendKeys("********");
 //		loginPage.loginButton().click();
 //		Thread.sleep(5000);
 //		Assert.assertTrue(driver.getPageSource().contains("п╢пе"));
-		Login_Action.execute(driver, "testemaillogin", "ma1111de");
+		Login_Action.execute(driver, "testemaillogin", "********");
 	}
 
 	@BeforeMethod
